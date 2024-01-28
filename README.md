@@ -1,4 +1,4 @@
-# COMP755-Projects
+# Dweet.io sensor array live stream
 project using Raspberry Pi, the SenseHat module, and Dweet.io
 
 Here is an example of one of our code blocks.  We first start by interfacing with the SenseHat module and pulling system and sensor information using some repeatable functions.  These are just examples of the data that can be collected, but can range from any number of system level statistics or other sensor data from the module.  We then begin a loop, periodically collecting the data, packing it into a dictionary object, and then sending it to our dweet.io site using the dweepy module.  The default dweet API requires that you concatenate your data in a string with the url of your specific dweet.io extension.  This makes it very unwieldy to append large amounts of data to be posted, while the dweepy module allows you to add your data as a dictionary object in the dweet_for args.  We then run the sleep() command to define how often our readings are taken.
